@@ -20,8 +20,6 @@ const News = ({ simplified }) => {
     newsCategory,
     count: simplified ? 6 : 12,
   });
-  console.log(cryptoNews);
-
   if (isFetching) return <Loader />;
 
   return (
@@ -40,7 +38,9 @@ const News = ({ simplified }) => {
           >
             <Option value="Cryptocurency">Cryptocurrency</Option>
             {data?.data?.coins?.map((currency) => (
-              <Option value={currency.name}>{currency.name}</Option>
+              <Option value={currency.name} key={currency.id}>
+                {currency.name}
+              </Option>
             ))}
           </Select>
         </Col>

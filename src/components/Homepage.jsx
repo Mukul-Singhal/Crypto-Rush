@@ -12,13 +12,11 @@ const { Title } = Typography;
 
 const HomePage = () => {
   const { data, isFetching } = useGetCryptosQuery(10);
-  console.log(data);
   if (isFetching) return <Loader />;
 
   const globalStats = data?.data?.stats;
   const globalCoins = data?.data?.coins;
-  console.log(globalStats);
-  console.log("1");
+
   return (
     <>
       <Title level={2} className="heading">

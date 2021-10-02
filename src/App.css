@@ -375,3 +375,7 @@ a:hover {
   padding: 20px;
   align-items: center;
 }
+.crypto-card-info {
+  color: rgb(85, 83, 83);
+  font-weight: 500;
+}

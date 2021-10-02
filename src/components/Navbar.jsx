@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Button, Menu, Typography, Avatar } from "antd";
 import { Link } from "react-router-dom";
 
+import cryptocurrency from "../images/cryptocurrency.png";
+
 import {
   HomeOutlined,
   MoneyCollectOutlined,
@@ -35,7 +37,7 @@ const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="logo-container">
-        <Avatar size="large" />
+        <Avatar src={cryptocurrency} size="large" />
         <Typography.Title level={2} className="logo">
           <Link to="/">Cryptorush</Link>
         </Typography.Title>
