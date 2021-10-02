@@ -1,14 +1,3 @@
-// var options = {
-//   method: "GET",
-//   url: "https://bing-news-search1.p.rapidapi.com/news",
-//   params: { safeSearch: "Off", textFormat: "Raw" },
-//   headers: {
-//     "x-bingapis-sdk": "true",
-//     "x-rapidapi-host": "bing-news-search1.p.rapidapi.com",
-//     "x-rapidapi-key": "738bae2684msh1eb6bceb37330f5p1a14dejsne51935aa04a3",
-//   },
-// };
-
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const cryptoNewsHeaders = {
