@@ -6,12 +6,14 @@ import { useGetCryptosQuery } from "../services/cryptoApi";
 
 import { Cryptocurrencies, News } from "../components";
 
+import Loader from "./Loader";
+
 const { Title } = Typography;
 
 const HomePage = () => {
   const { data, isFetching } = useGetCryptosQuery(10);
   console.log(data);
-  if (isFetching) return <div>Loading...</div>;
+  if (isFetching) return <Loader />;
 
   const globalStats = data?.data?.stats;
   const globalCoins = data?.data?.coins;
