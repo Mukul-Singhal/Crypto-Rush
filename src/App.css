@@ -379,3 +379,8 @@ a:hover {
   color: rgb(85, 83, 83);
   font-weight: 500;
 }
+
+.exchange-heading {
+  color: black;
+  font-weight: 500;
+}
