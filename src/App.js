@@ -19,30 +19,35 @@ function App() {
         <Navbar />
       </div>
       <div className="main">
-        <Switch>
-          <Route exact path="/">
-            <HomePage />
-          </Route>
-          <Route exact path="/exchanges">
-            <Exchanges />
-          </Route>
-          <Route exact path="/cryptocurrencies">
-            <Cryptocurrencies />
-          </Route>
-          <Route exact path="/crypto/:coinId">
-            <CryptoDetails />
-          </Route>
-          <Route exact path="/news">
-            <News />
-          </Route>
-        </Switch>
+        <Layout>
+          <div className="routes">
+            <Switch>
+              <Route exact path="/">
+                <HomePage />
+              </Route>
+              <Route exact path="/exchanges">
+                <Exchanges />
+              </Route>
+              <Route exact path="/cryptocurrencies">
+                <Cryptocurrencies />
+              </Route>
+              <Route exact path="/crypto/:coinId">
+                <CryptoDetails />
+              </Route>
+              <Route exact path="/news">
+                <News />
+              </Route>
+            </Switch>
+          </div>
+        </Layout>
 
         <div className="footer">
           <Typography.Title
             level={5}
             style={{ color: "white", textAlign: "center" }}
           >
-            CryptoRush <br />
+            <Link to="/">CryptoRush @ 2021</Link>
+            <br />
             All rights reserved
           </Typography.Title>
           <Space>
