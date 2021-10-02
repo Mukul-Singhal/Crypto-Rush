@@ -1,8 +1,7 @@
 
 #  Crypto Rush 💰
 
-Crypto Rush is a web-app that you nedd to get all the latest information about the crypto World.
-## Screenshots
+Crypto Rush is a web app that gives all the latest information about cryptocurrencies to all the crypto punks out there.## Screenshots
 
 ![Project](https://i.imgur.com/ezr5Rlg.gif)
 

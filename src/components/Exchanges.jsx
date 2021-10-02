@@ -21,9 +21,15 @@ const Exchanges = () => {
         <Col className="exchange-heading" span={6}>
           Exchanges
         </Col>
-        <Col span={6}>24h Trade Volume</Col>
-        <Col span={6}>Markets</Col>
-        <Col span={6}>Change</Col>
+        <Col className="exchange-heading" span={6}>
+          24h Trade Volume
+        </Col>
+        <Col className="exchange-heading" span={6}>
+          Markets
+        </Col>
+        <Col className="exchange-heading" span={6}>
+          Change
+        </Col>
       </Row>
       <Row>
         {exchangesList.map((exchange, i) => (
