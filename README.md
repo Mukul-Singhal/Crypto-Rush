@@ -2,16 +2,13 @@
 #  Crypto Rush 💰
 
 Crypto Rush is a web app that gives all the latest information about cryptocurrencies to all the crypto punks out there.
+
+[Link](https://cryptorush.netlify.app/)
 ## Demo Video
 
 ![Project](https://i.imgur.com/ezr5Rlg.gif)
 
 
-
-
-
-
-  
 ## Features
 
 - User can see Latest news and trending cryptos around the world
